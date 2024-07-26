@@ -10,11 +10,17 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 /*
@@ -245,3 +251,20 @@ textarea {
   }
 }
 
+.main-page h1 {
+    border-bottom: 1px solid black;
+}
+.main-page h1:after {
+  content: '';
+  display: block;
+  border-bottom: 4px solid black;
+  margin-bottom: 4px;
+}
+.byline {
+  text-align: right;
+}
+.page-wrap {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
