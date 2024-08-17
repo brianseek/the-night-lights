@@ -253,13 +253,16 @@ textarea {
     page-break-after: avoid;
   }
 }
+img {
+  width: 100%;
+}
 .bold {
   font-weight: bold;
 }
 body {
   margin: 0 auto;
   max-width: 1040px;
-  background: white;
+  background: ghostwhite;
 }
 header {
   margin-top: 1rem;
@@ -293,7 +296,10 @@ section {
   order: 2;
   margin: 0 auto;
 }
-figcaption {
+.statement figure img {
+  width: 100%;
+}
+.statement figcaption {
   margin-top: 2px;
   font-size: .7rem;
   border-bottom: 1px solid black;
@@ -306,6 +312,25 @@ figcaption {
   .statement figure {
     float: right;
     max-width: 500px;
-    margin: 0 1rem;
+    margin: 0 0 0 1rem;
   }
+}
+
+ul.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -.5rem;
+  padding: 0;
+}
+.photo-grid li {
+  list-style: none;
+  width: 50%;
+  max-width: calc(200px + 1rem);
+}
+.photo-grid figure {
+  margin: .5rem;
+}
+.photo-grid figcaption {
+  text-align: center;
 }
