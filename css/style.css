@@ -21,6 +21,9 @@ html {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  background: black;
 }
 
 /*
@@ -250,7 +253,18 @@ textarea {
     page-break-after: avoid;
   }
 }
-
+.bold {
+  font-weight: bold;
+}
+body {
+  margin: 0 auto;
+  max-width: 1040px;
+  background: white;
+}
+header {
+  margin-top: 1rem;
+  overflow: hidden;
+}
 .main-page h1 {
     border-bottom: 1px solid black;
 }
@@ -267,4 +281,31 @@ textarea {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+section {
+  clear: both;
+}
+.statement {
+  display: flex;
+  flex-direction: column;
+}
+.statement figure {
+  order: 2;
+  margin: 0 auto;
+}
+figcaption {
+  margin-top: 2px;
+  font-size: .7rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 2px;
+}
+@media screen and (min-width: 840px) {
+  .statement {
+    display: block;
+  }
+  .statement figure {
+    float: right;
+    max-width: 500px;
+    margin: 0 1rem;
+  }
 }
