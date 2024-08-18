@@ -334,3 +334,28 @@ ul.photo-grid {
 .photo-grid figcaption {
   text-align: center;
 }
+.page-wrap {
+  overflow: hidden;
+}
+
+.photo-page .photo {
+  margin: 0 auto;
+}
+section.details dt {
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+section.details dd {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 500px) {
+  .photo-page section {
+    clear: none;
+  }
+  .photo-page .photo {
+    float: right;
+    width: 50%;
+    margin: 0 0 1rem 1rem;
+  }
+}
