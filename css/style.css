@@ -253,6 +253,16 @@ textarea {
     page-break-after: avoid;
   }
 }
+h1, h2, h3 {
+  font-weight: 100;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;  
+  margin: 1rem 0;
+}
 img {
   width: 100%;
 }
@@ -268,8 +278,20 @@ header {
   margin-top: 1rem;
   overflow: hidden;
 }
+footer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+footer img {
+  height: 80px;
+  width: auto;
+  margin: 1rem auto;
+}
 .main-page h1 {
     border-bottom: 1px solid black;
+    font-size: 5rem;
+    margin: 10px 0;
 }
 .main-page h1:after {
   content: '';
