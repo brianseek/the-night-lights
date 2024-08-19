@@ -371,15 +371,19 @@ section.details dd {
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
-/* .photo-page .back a:before {
+.photo-page .back a {
+  display: flex;
+  align-items: center;
+}
+.photo-page .back a:before {
   content: '';
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent; 
-  
-  border-right:10px solid blue; 
-} */
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid black;
+  margin-right: .5rem;
+}
 @media screen and (min-width: 500px) {
   .photo-page section {
     clear: none;
