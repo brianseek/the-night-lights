@@ -10,10 +10,21 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+   :root {
+    --font-size--default: calc((16/16) * 1rem); /* 16px */
+    --font-size--large: calc((24/16) * 1rem); /* 24px */
+  }
+  
+  .font-size--default {
+    font-size: var(--font-size--default);
+  }
+  
+  .font-size--large {
+    font-size: var(--font-size--large);
+  }
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 html {
   color: #222;
-  font-size: 1em;
   line-height: 1.4;
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
@@ -263,6 +274,9 @@ h2 {
   font-size: 2rem;  
   margin: 1rem 0;
 }
+.font-size--large h2 {
+  font-size: 2.5rem;
+}
 img {
   width: 100%;
 }
@@ -303,7 +317,7 @@ footer img {
   text-align: right;
 }
 .page-wrap {
-  max-width: 1600px;
+  max-width: 100em;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -327,7 +341,7 @@ section {
   border-bottom: 1px solid black;
   padding-bottom: 2px;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 52.5em) {
   .about {
     display: block;
   }
@@ -384,7 +398,7 @@ section.details dd {
   border-right: 10px solid black;
   margin-right: .5rem;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 31.25em) {
   .photo-page section {
     clear: none;
   }
