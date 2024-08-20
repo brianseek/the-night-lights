@@ -310,28 +310,28 @@ footer img {
 section {
   clear: both;
 }
-.statement {
+.about {
   display: flex;
   flex-direction: column;
 }
-.statement figure {
+.about figure {
   order: 2;
   margin: 0 auto;
 }
-.statement figure img {
+.about figure img {
   width: 100%;
 }
-.statement figcaption {
+.about figcaption {
   margin-top: 2px;
   font-size: .7rem;
   border-bottom: 1px solid black;
   padding-bottom: 2px;
 }
 @media screen and (min-width: 840px) {
-  .statement {
+  .about {
     display: block;
   }
-  .statement figure {
+  .about figure {
     float: right;
     max-width: 500px;
     margin: 0 0 0 1rem;

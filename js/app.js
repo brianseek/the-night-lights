@@ -5,3 +5,6 @@ if (viewportWidth < 450) {
   hpBox.destroy();
   ppBox.destroy();
 }
+var encEmail = "YnJpYW4uc2VlaytuLWxAZ21haWwuY29t";
+const form = document.getElementById("contact");
+form.setAttribute("href", "mailto:".concat(atob(encEmail)));
