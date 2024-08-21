@@ -318,7 +318,10 @@ footer img {
 }
 .a11y-container {
   display: flex;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+}
+.main-page .a11y-container {
+  margin-top: 0;
 }
 .page-wrap {
   max-width: 100em;
