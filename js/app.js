@@ -10,16 +10,31 @@ const form = document.getElementById("contact");
 form.setAttribute("href", "mailto:".concat(atob(encEmail)));
 
 document.addEventListener("DOMContentLoaded", function() {
+  var selectedSize = sessionStorage.getItem('font-size');
   var fontSwitch = document.getElementsByClassName('font-size-toggle')[0];
   var body = document.getElementsByTagName('body')[0];
-
-  fontSwitch.addEventListener('click', function() {
-    if (body.classList.contains('font-size--default')) {
-      body.classList.remove('font-size--default');
-      body.classList.add('font-size--large');
+  var otherSize;
+  if (selectedSize) {
+    if (selectedSize === 'font-size--default') {
+      otherSize = 'font-size--large';
     } else {
-      body.classList.remove('font-size--large');
-      body.classList.add('font-size--default');
+      otherSize = 'font-size--default';
     }
+    body.classList.add(selectedSize);
+    body.classList.remove(otherSize);
+  };
+  fontSwitch.addEventListener('click', function() {
+    var newSize = '';
+    var oldSize = '';
+    if (body.classList.contains('font-size--default')) {
+      newSize = 'font-size--large'
+      oldSize = 'font-size--default'
+    } else if (body.classList.contains('font-size--large')) {
+      newSize = 'font-size--default'
+      oldSize = 'font-size--large'
+    };
+    sessionStorage.setItem('font-size', newSize);
+    body.classList.remove(oldSize);
+    body.classList.add(newSize);
   });
 });

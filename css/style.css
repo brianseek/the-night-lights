@@ -316,6 +316,9 @@ footer img {
 .byline {
   text-align: right;
 }
+.a11y-container {
+  display: flex;
+}
 .page-wrap {
   max-width: 100em;
   margin: 0 auto;
