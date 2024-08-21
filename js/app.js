@@ -14,14 +14,17 @@ document.addEventListener("DOMContentLoaded", function() {
   var fontSwitch = document.getElementsByClassName('font-size-toggle')[0];
   var body = document.getElementsByTagName('body')[0];
   var otherSize;
+  function changeText (oldSize, newSize) {
+    body.classList.add(newSize);
+    body.classList.remove(oldSize);
+  };
   if (selectedSize) {
     if (selectedSize === 'font-size--default') {
       otherSize = 'font-size--large';
     } else {
       otherSize = 'font-size--default';
     }
-    body.classList.add(selectedSize);
-    body.classList.remove(otherSize);
+    changeText(otherSize, selectedSize);
   };
   fontSwitch.addEventListener('click', function() {
     var newSize = '';
@@ -34,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function() {
       oldSize = 'font-size--large'
     };
     sessionStorage.setItem('font-size', newSize);
-    body.classList.remove(oldSize);
-    body.classList.add(newSize);
+    changeText(oldSize, newSize);
   });
 });
