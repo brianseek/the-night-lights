@@ -1,10 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Page Not Found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="description" content="404 page for the exhibit 'The Night Lights' by Brian Seek.">
+
+  <link rel="icon" href="../favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+
+  <link rel="manifest" href="./site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHC2G9PBDR"></script>
   <script>
@@ -14,61 +22,58 @@
 
     gtag('config', 'G-EHC2G9PBDR');
   </script>
-  <style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
-
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
-
-    body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
-    }
-
-    h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
-    }
-
-    p {
-      margin: 0 auto;
-      width: 280px;
-    }
-
-    @media only screen and (max-width: 280px) {
-
-      body,
-      p {
-        width: 95%;
-      }
-
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
-
-    }
-  </style>
 </head>
 
-<body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
-  <nav>
-    <a href="/">Back to all photos</a>
-  </nav>
+<body class="photo-page font-size--default">
+  <div class="page-wrap">
+    <header>
+      <h1>Page Not Found</h1>
+    </header>
+    <main>
+      <section class="photo">
+        <img src="../img/m/Seek_20-Late-night-pollo.jpg" alt='An out of focus photograph of a man wearing glasses with a confused look on his face. Perhaps he was inspecting what was going on with the camera shutter and accidentally tripped the shutter.' />
+      </section>
+      <div class="a11y-container">
+        <a href="javascript:void(0);" class="font-size-toggle" role="button" title="Toggle font size" aria-label="Toggle font size">
+          <img src="../img/font-size.svg" alt="re-size font toggle" height="35" width="35" />
+        </a>
+      </div>
+      <section class="details">
+        <p>Sorry, looks like you are looking for something that doesn't exist. Or maybe I deleted it, shhh don't tell anyone.</p> 
+      </section>
+      <nav class="back">
+        <a href="/#photographs" class="back-link">Back to all photos</a>
+      </nav>
+    </main>
+  </div>
+  <footer>
+    <a href="https://seek.photo" target="_blank" title="click to visit https://seek.photo"><img src="../img/seek-solid.svg" alt='The mark of artist Brian Seek, a diamond shape with name "Seek" conformed to its interior.' /></a>
+  </footer>
+  <script src="../js/app.js"></script>
+  <!--
+
+          _____                    _____                    _____                    _____          
+         /\    \                  /\    \                  /\    \                  /\    \         
+        /::\    \                /::\    \                /::\    \                /::\____\        
+       /::::\    \              /::::\    \              /::::\    \              /:::/    /        
+      /::::::\    \            /::::::\    \            /::::::\    \            /:::/    /         -------------------------------------------------------------------------, 
+     /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \          /:::/    /          [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [
+    /:::/__\:::\    \        /:::/__\:::\    \        /:::/__\:::\    \        /:::/____/           -----------------------------------------------------------------------/
+    \:::\   \:::\    \      /::::\   \:::\    \      /::::\   \:::\    \      /::::\    \                 \|/ | O -   ^^         |                  |           _   _     |
+  ___\:::\   \:::\    \    /::::::\   \:::\    \    /::::::\   \:::\    \    /::::::\____\________       --O--|/ \        O  ^^  |   ^^   |||||     |     ___  ( ) ( )   _/ 
+ /\   \:::\   \:::\    \  /:::/\:::\   \:::\    \  /:::/\:::\   \:::\    \  /:::/\:::::::::::\    \  /\   /|\ |         --|--    | ^^     |O=O|     |_ __/_|_\,_|___|___/  
+/::\   \:::\   \:::\____\/:::/__\:::\   \:::\____\/:::/__\:::\   \:::\____\/:::/  |:::::::::::\____\/  \/\    |~~~~~~~~~~~|~~~~~~|        ( - )     | `-O---O-'       |
+\:::\   \:::\   \::/    /\:::\   \:::\   \::/    /\:::\   \:::\   \::/    /\::/   |::|~~~|~~~~~       /\  \/\_|          / \     |       .-~~~-.    | -- -- -- -- -- /
+ \:::\   \:::\   \/____/  \:::\   \:::\   \/____/  \:::\   \:::\   \/____/  \/____|::|   |           /  /\ \  |         '   `    |      //| o |\\   |______________ |
+  \:::\   \:::\    \       \:::\   \:::\    \       \:::\   \:::\    \            |::|   |         --------------------------------------------------------------_/ 
+   \:::\   \:::\____\       \:::\   \:::\____\       \:::\   \:::\____\           |::|   |         [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [' 
+    \:::\  /:::/    /        \:::\   \::/    /        \:::\   \::/    /           |::|   |         ------------------------------------------------------------'  
+     \:::\/:::/    /          \:::\   \/____/          \:::\   \/____/            |::|   |          
+      \::::::/    /            \:::\    \               \:::\    \                |::|   |          
+       \::::/    /              \:::\____\               \:::\____\               \::|   |          
+        \::/    /                \::/    /                \::/    /                \:|   |          
+         \/____/                  \/____/                  \/____/                  \|___|          
+  -->
 </body>
 
 </html>
-<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
