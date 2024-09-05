@@ -393,11 +393,11 @@ section.details dd {
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
-.photo-page .back a {
+.back a {
   display: flex;
   align-items: center;
 }
-.photo-page .back a:before {
+.back a:before {
   content: '';
   width: 0;
   height: 0;
@@ -405,6 +405,9 @@ section.details dd {
   border-bottom: 10px solid transparent;
   border-right: 10px solid black;
   margin-right: .5rem;
+}
+.not-found-page .back {
+  margin-bottom: 1em;
 }
 @media screen and (min-width: 31.25em) {
   .photo-page section {

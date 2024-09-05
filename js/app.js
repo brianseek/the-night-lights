@@ -7,8 +7,9 @@ if (viewportWidth < 450) {
 }
 var encEmail = "YnJpYW4uc2VlaytuLWxAZ21haWwuY29t";
 const form = document.getElementById("contact");
-form.setAttribute("href", "mailto:".concat(atob(encEmail)));
-
+if (form) {
+  form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+}
 document.addEventListener("DOMContentLoaded", function() {
   var selectedSize = sessionStorage.getItem('font-size');
   var fontSwitch = document.getElementsByClassName('font-size-toggle')[0];
