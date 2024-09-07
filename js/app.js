@@ -12,22 +12,32 @@ if (form) {
 }
 document.addEventListener("DOMContentLoaded", function() {
   var selectedSize = sessionStorage.getItem('font-size');
-  var fontSwitch = document.getElementsByClassName('font-size-toggle')[0];
+  var selectedFont = sessionStorage.getItem('font-type');
+  var sizeSwitch = document.getElementsByClassName('font-size-toggle')[0];
+  var fontSwitch = document.getElementsByClassName('font-type-toggle')[0];
   var body = document.getElementsByTagName('body')[0];
-  var otherSize;
-  function changeText (oldSize, newSize) {
-    body.classList.add(newSize);
-    body.classList.remove(oldSize);
+  var otherValue;
+  function changeValue (oldValue, newValue) {
+    body.classList.add(newValue);
+    body.classList.remove(oldValue);
   };
   if (selectedSize) {
     if (selectedSize === 'font-size--default') {
-      otherSize = 'font-size--large';
+      otherValue = 'font-size--large';
     } else {
-      otherSize = 'font-size--default';
+      otherValue = 'font-size--default';
     }
-    changeText(otherSize, selectedSize);
+    changeValue(otherValue, selectedSize);
   };
-  fontSwitch.addEventListener('click', function() {
+  if (selectedFont) {
+    if (selectedFont === 'font-type--default') {
+      otherValue = 'font-type--od';
+    } else {
+      otherValue = 'font-type--default';
+    }
+    changeValue(otherValue, selectedFont);
+  };
+  sizeSwitch.addEventListener('click', function() {
     var newSize = '';
     var oldSize = '';
     if (body.classList.contains('font-size--default')) {
@@ -38,6 +48,19 @@ document.addEventListener("DOMContentLoaded", function() {
       oldSize = 'font-size--large'
     };
     sessionStorage.setItem('font-size', newSize);
-    changeText(oldSize, newSize);
+    changeValue(oldSize, newSize);
+  });
+  fontSwitch.addEventListener('click', function() {
+    var newType = '';
+    var oldType = '';
+    if (body.classList.contains('font-type--default')) {
+      newType = 'font-type--od'
+      oldType = 'font-type--default'
+    } else if (body.classList.contains('font-type--od')) {
+      newType = 'font-type--default'
+      oldType = 'font-type--od'
+    };
+    sessionStorage.setItem('font-type', newType);
+    changeValue(oldType, newType);
   });
 });

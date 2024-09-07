@@ -320,6 +320,9 @@ footer img {
     font-size: 5rem;
     margin: 10px 0;
 }
+.font-type--od.main-page h1 {
+  font-size: 4rem;
+}
 .main-page h1:after {
   content: '';
   display: block;
@@ -332,6 +335,9 @@ footer img {
 .a11y-container {
   display: flex;
   margin: 1rem 0;
+}
+.a11y-container a {
+  margin-right: 1em;
 }
 .main-page .a11y-container {
   margin-top: 0;
