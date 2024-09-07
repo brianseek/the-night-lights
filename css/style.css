@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+  font-family: "Open Dyslexic";
+  src: url('../font/OpenDyslexic-Regular.eot');
+  src: url('../font/OpenDyslexic-Regular.eot') format('embedded-opentype'),
+       url('../font/OpenDyslexic-Regular.woff2') format('woff2'),
+       url('../font/OpenDyslexic-Regular.woff') format('woff'),
+       url('../font/OpenDyslexic-Regular.otf') format('otf');
+}
 /*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -16,7 +24,12 @@
     --font-size--default: calc((16/16) * 1rem); /* 16px */
     --font-size--large: calc((24/16) * 1rem); /* 24px */
   }
-  
+  .font-type--default {
+    font-family: "Noto Sans", sans-serif;
+  }
+  .font-type--od {
+    font-family: "Open Dyslexic", sans-serif;
+  }
   .font-size--default {
     font-size: var(--font-size--default);
   }
@@ -27,7 +40,6 @@
 html {
   color: #222;
   line-height: 1.4;
-  font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
