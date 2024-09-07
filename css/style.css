@@ -337,7 +337,11 @@ footer img {
   margin: 1rem 0;
 }
 .a11y-container a {
-  margin-right: 1em;
+  margin-right: .65em;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
 }
 .main-page .a11y-container {
   margin-top: 0;
