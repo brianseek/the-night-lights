@@ -63,4 +63,19 @@ document.addEventListener("DOMContentLoaded", function() {
     sessionStorage.setItem('font-type', newType);
     changeValue(oldType, newType);
   });
+  var helpSwitch = document.getElementsByClassName("font-help")[0];
+  var helpContent = document.getElementsByClassName("a11y-help")[0];
+  helpSwitch.addEventListener("click", function() {
+    this.classList.toggle("active");
+    if (helpContent.style.maxHeight){
+      helpContent.style.marginTop = 0;
+      helpContent.style.maxHeight = null;
+      helpContent.style.overflow = 'hidden';
+    } else {
+      helpContent.style.marginTop = '24px';
+      helpContent.style.overflow = 'visible';
+      helpContent.style.maxHeight = helpContent.scrollHeight + "px";
+    } 
+  });
+  
 });
