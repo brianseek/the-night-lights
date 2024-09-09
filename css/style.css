@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+  font-family: "Open Dyslexic";
+  src: url('../font/OpenDyslexic-Regular.eot');
+  src: url('../font/OpenDyslexic-Regular.eot') format('embedded-opentype'),
+       url('../font/OpenDyslexic-Regular.woff2') format('woff2'),
+       url('../font/OpenDyslexic-Regular.woff') format('woff'),
+       url('../font/OpenDyslexic-Regular.otf') format('otf');
+}
 /*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -16,7 +24,12 @@
     --font-size--default: calc((16/16) * 1rem); /* 16px */
     --font-size--large: calc((24/16) * 1rem); /* 24px */
   }
-  
+  .font-type--default {
+    font-family: "Noto Sans", sans-serif;
+  }
+  .font-type--od {
+    font-family: "Open Dyslexic", sans-serif;
+  }
   .font-size--default {
     font-size: var(--font-size--default);
   }
@@ -27,7 +40,6 @@
 html {
   color: #222;
   line-height: 1.4;
-  font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -308,6 +320,9 @@ footer img {
     font-size: 5rem;
     margin: 10px 0;
 }
+.font-type--od.main-page h1 {
+  font-size: 4rem;
+}
 .main-page h1:after {
   content: '';
   display: block;
@@ -320,6 +335,117 @@ footer img {
 .a11y-container {
   display: flex;
   margin: 1rem 0;
+}
+.a11y-container a {
+  margin-right: 10px;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+}
+.a11y-help {
+  margin-top: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.a11y-help p {
+  margin: 6px 0;
+}
+.type-help {
+  margin-left: 60px;
+  position: relative;
+}
+.type-help:before {
+  position: absolute;
+  content: '';
+  background: no-repeat url('../img/arrow.svg');
+  height: 23px;
+  width: 20px;
+  left: -1px;
+  background-size: 50%;
+  top: -21px;
+}
+.size-help {
+  margin-left: 15px;
+  position: relative;
+}
+.size-help:before {
+  position: absolute;
+  content: '';
+  background: no-repeat url('../img/arrow.svg');
+  height: 49px;
+  width: 20px;
+  left: -1px;
+  background-size: 50%;
+  top: -48px;
+}
+.font-size--large .type-help {
+  margin-left: 57px;
+}
+.font-size--large .type-help::before {
+  left: 1px;
+}
+.font-size--large .size-help {
+  margin-left: 11px;
+}
+.font-size--large .size-help:before {
+  top: -94px;
+  height: 97px;
+  left: 2px;
+}
+@media screen and (min-width: 25.9375em) {
+  .font-size--large .size-help:before {
+    top: -60px;
+    height: 62px;
+  }
+}
+.font-type--od .type-help {
+  margin-left: 55px;
+}
+.font-type--od .type-help:before {
+  left: 3px;
+  height: 20px;
+}
+.font-type--od .size-help {
+  margin-left: 10px;
+}
+.font-type--od .size-help:before {
+  margin-left: 3px;
+  top: -71px;
+  height: 70px;
+}
+@media screen and (min-width: 25.375em) {
+  .font-type--od .size-help:before {
+    top: -49px;
+    height: 48px;
+  }
+}
+.font-size--large.font-type--od .type-help {
+  margin-left: 50px;
+}
+.font-size--large.font-type--od .type-help:before {
+  left: 7px;
+}
+.font-size--large.font-type--od .size-help {
+  margin-left: 7px;
+}
+.font-size--large.font-type--od .size-help:before {
+  margin-left: 5px;
+  top: -126px;
+  height: 124px;
+}
+@media screen and (min-width: 26.4375em) {
+  .font-size--large.font-type--od .size-help:before {
+    top: -93px;
+    height: 96px;
+  }
+}
+@media screen and (min-width: 34em) {
+  .font-size--large.font-type--od .size-help:before {
+    top: -60px;
+    height: 60px;
+  }
 }
 .main-page .a11y-container {
   margin-top: 0;

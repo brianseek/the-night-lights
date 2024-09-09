@@ -40,22 +40,38 @@
   <script src="../js/vendor/simpleLightbox.min.js"></script>
 </head>
 
-<body class="photo-page font-size--default">
+<body class="photo-page font-size--default font-type--default">
   <div class="page-wrap">
     <header>
       <h1>Love Cycles</h1>
     </header>
     <main>
+      <div class="a11y-wrapper">
+        <div class="a11y-container">
+          <a href="javascript:void(0);" class="font-size-toggle" role="button" title="Toggle font size" aria-label="Toggle font size">
+            <img src="../img/font-size.svg" alt="re-size font toggle" height="35" width="35" />
+          </a>
+          <a href="javascript:void(0);" class="font-type-toggle" role="button" title="Toggle OpenDyslexic font" aria-label="Toggle OpenDyslexic font">
+            <img src="../img/font-type.svg" alt="font type toggle" height="35" width="35" />
+          </a>
+          <a href="javascript:void(0);" class="font-help" role="button" title="Font control help" aria-hidden="true">
+            <img src="../img/font-help.svg" alt="font control help" height="25" width="25" />
+          </a>
+        </div>
+        <div class="a11y-help" aria-hidden="true">
+          <div class="type-help">
+            <p>Toggle <a href="https://opendyslexic.org/">OpenDyslexic font</a>.</p>
+          </div>
+          <div class="size-help">
+            <p>Toggle font size.</p>
+          </div>
+        </div>
+      </div>
       <section class="photo">
         <a aria-description="Click to view large" class="view-large" href="../img/b/Seek_18-Love-Cycles.jpg" title="Love Cycles">
           <img src="../img/m/Seek_18-Love-Cycles.jpg" alt='A long exposure photograph of an industrial building that has been converted to a custom motorcycle shop. A metal grate is covering the open shop door. The light is on in the building showing the interior of merchandise and old motorcycle parts. The front of the building has exposed brickwork, painted on the bricks are the words "Vintage Choppers" & "Buy, Sell, Trade". There is a sign hanging on the front of the building that reads "Love Cycles" and has a logo of a motorcycle wheel with wings. In front of the building a late 60s vintage truck is parked. Just the front drivers side can be seen.' />
         </a>
       </section>
-      <div class="a11y-container">
-        <a href="javascript:void(0);" class="font-size-toggle" role="button" title="Toggle font size" aria-label="Toggle font size">
-          <img src="../img/font-size.svg" alt="re-size font toggle" height="35" width="35" />
-        </a>
-      </div>
       <section class="details">
         <dl>
           <dt>Location:</dt>

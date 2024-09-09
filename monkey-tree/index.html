@@ -40,22 +40,38 @@
   <script src="../js/vendor/simpleLightbox.min.js"></script>
 </head>
 
-<body class="photo-page font-size--default">
+<body class="photo-page font-size--default font-type--default">
   <div class="page-wrap">
     <header>
       <h1>Monkey Tree</h1>
     </header>
     <main>
+      <div class="a11y-wrapper">
+        <div class="a11y-container">
+          <a href="javascript:void(0);" class="font-size-toggle" role="button" title="Toggle font size" aria-label="Toggle font size">
+            <img src="../img/font-size.svg" alt="re-size font toggle" height="35" width="35" />
+          </a>
+          <a href="javascript:void(0);" class="font-type-toggle" role="button" title="Toggle OpenDyslexic font" aria-label="Toggle OpenDyslexic font">
+            <img src="../img/font-type.svg" alt="font type toggle" height="35" width="35" />
+          </a>
+          <a href="javascript:void(0);" class="font-help" role="button" title="Font control help" aria-hidden="true">
+            <img src="../img/font-help.svg" alt="font control help" height="25" width="25" />
+          </a>
+        </div>
+        <div class="a11y-help" aria-hidden="true">
+          <div class="type-help">
+            <p>Toggle <a href="https://opendyslexic.org/">OpenDyslexic font</a>.</p>
+          </div>
+          <div class="size-help">
+            <p>Toggle font size.</p>
+          </div>
+        </div>
+      </div>
       <section class="photo">
         <a aria-description="Click to view large" class="view-large" href="../img/b/Seek_14-Monkey-Tree.jpg" title="Monkey Tree">
           <img src="../img/m/Seek_14-Monkey-Tree.jpg" alt='A long exposure photograph of the exterior of a building. The building has a very angular mid-century architecture style. The roof extends beyond the walls containing the building at an angle. It is then bisected by a support structure that creates a slightly obtuse angle. Under the roof the gate of an exterior wall mimics the same angled shape. A large glass window of the building can be seen with the interior illuminated by an atomic-age chandelier. A desk can be seen along with framed art on the walls. A lighted sidewalk path can be seen in the foreground leading to the gate. In the background faint outlines of palm trees can be seen.' />
         </a>
       </section>
-      <div class="a11y-container">
-        <a href="javascript:void(0);" class="font-size-toggle" role="button" title="Toggle font size" aria-label="Toggle font size">
-          <img src="../img/font-size.svg" alt="re-size font toggle" height="35" width="35" />
-        </a>
-      </div>
       <section class="details">
         <dl>
           <dt>Location:</dt>

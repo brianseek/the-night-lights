@@ -40,22 +40,38 @@
   <script src="../js/vendor/simpleLightbox.min.js"></script>
 </head>
 
-<body class="photo-page font-size--default">
+<body class="photo-page font-size--default font-type--default">
   <div class="page-wrap">
     <header>
       <h1>Late night pollo</h1>
     </header>
     <main>
+      <div class="a11y-wrapper">
+        <div class="a11y-container">
+          <a href="javascript:void(0);" class="font-size-toggle" role="button" title="Toggle font size" aria-label="Toggle font size">
+            <img src="../img/font-size.svg" alt="re-size font toggle" height="35" width="35" />
+          </a>
+          <a href="javascript:void(0);" class="font-type-toggle" role="button" title="Toggle OpenDyslexic font" aria-label="Toggle OpenDyslexic font">
+            <img src="../img/font-type.svg" alt="font type toggle" height="35" width="35" />
+          </a>
+          <a href="javascript:void(0);" class="font-help" role="button" title="Font control help" aria-hidden="true">
+            <img src="../img/font-help.svg" alt="font control help" height="25" width="25" />
+          </a>
+        </div>
+        <div class="a11y-help" aria-hidden="true">
+          <div class="type-help">
+            <p>Toggle <a href="https://opendyslexic.org/">OpenDyslexic font</a>.</p>
+          </div>
+          <div class="size-help">
+            <p>Toggle font size.</p>
+          </div>
+        </div>
+      </div>
       <section class="photo">
         <a aria-description="Click to view large" class="view-large" href="../img/b/Seek_20-Late-night-pollo.jpg" title="Late night pollo">
           <img src="../img/m/Seek_20-Late-night-pollo.jpg" alt='A long exposure photograph of a street food stand on the corner of two streets. The photograph is framed at an angle so two sides of the stand can be seen. The name "Pollo Ditu" is written on the top of the stand. On one side patrons can be seen sitting, two a dark and obscured by motion blur, a third can be seen in more still detail. Inside the stand cooks can be seen tending to their grills. Behind the stand the faint details of a large wall can be seen that extends to the top of the frame. Street lights can be seen in the distance illuminating the road on the far side of the stand.' />
         </a>
       </section>
-      <div class="a11y-container">
-        <a href="javascript:void(0);" class="font-size-toggle" role="button" title="Toggle font size" aria-label="Toggle font size">
-          <img src="../img/font-size.svg" alt="re-size font toggle" height="35" width="35" />
-        </a>
-      </div>
       <section class="details">
         <dl>
           <dt>Location:</dt>
