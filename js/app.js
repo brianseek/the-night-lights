@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
       helpContent.style.marginTop = '24px';
       helpContent.style.overflow = 'visible';
-      helpContent.style.maxHeight = helpContent.scrollHeight + "px";
+      helpContent.style.maxHeight = '200px';
     } 
   });
   
